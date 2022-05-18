@@ -16,8 +16,7 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 
 ## Screenshots
 
-<img src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg" width="100px">
-
+<div align=center><img width="150" height="150" src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
 
 ##### Splashpage1
 

@@ -16,7 +16,8 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 
 ## Screenshots
 
-![image-20220518151454687](/Users/xiaolingla/Library/Application Support/typora-user-images/image-20220518151454687.png)
+<img src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg" width="100px">
+
 
 ##### Splashpage1
 

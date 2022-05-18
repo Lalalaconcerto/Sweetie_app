@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sweetie/ListView/NearbyListView.dart';
+import 'package:sweetie/pages/splash_page.dart';
 import '../model/product.dart';
 import '../model/products_repository.dart';
 
@@ -168,6 +169,26 @@ class _HomePageState extends State<HomePage> {
                           color: darkColr,
                           size: 100,
                         )),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                      child: RaisedButton(
+                        child: Text(
+                          'Log out',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        color: darkColr,
+                        shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(8.0))),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SplashPage()),
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ],
@@ -195,7 +216,6 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-//-----WIDGETS-----
 class AppSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -247,7 +267,7 @@ class AppSearch extends StatelessWidget {
                                 child: TextFormField(
                                     obscureText: false,
                                     decoration: InputDecoration(
-                                      hintText: 'Search',
+                                      hintText: 'Search here...',
                                       enabledBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Colors.transparent,
@@ -412,6 +432,7 @@ class AppCategory extends StatelessWidget {
   }
 }
 
+// Desserts Nearby Listview
 class AppCakeNearbyListView extends StatelessWidget {
   final Category category;
 

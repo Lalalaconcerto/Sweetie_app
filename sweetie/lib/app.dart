@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sweetie/model/product.dart';
-import 'package:sweetie/pages/home_page.dart';
 import 'package:sweetie/pages/splash_page.dart';
 
 class SweetieApp extends StatefulWidget {
@@ -15,10 +13,6 @@ class _SweetieAppState extends State<SweetieApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SplashPage(),
-      // TODO: Add a theme (103)
     );
   }
 }
-
-// TODO: Build a Sweetie Theme (103)
-// TODO: Build a Sweetie Text Theme (103)

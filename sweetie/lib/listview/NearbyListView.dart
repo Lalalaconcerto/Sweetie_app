@@ -26,7 +26,6 @@ class NearbyListView extends StatelessWidget {
           await Navigator.push(
               context,
               MaterialPageRoute(
-                  // ignore: prefer_const_constructors
                   builder: (context) => DetailPage(
                         product: products[index],
                         // list[0].name,

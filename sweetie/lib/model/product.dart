@@ -26,12 +26,12 @@ class Product {
   final String detail;
 }
 
-class Images1 {
-  const Images1({
-    required this.path1,
-    required this.path2,
-  });
+// class Images1 {
+//   const Images1({
+//     required this.path1,
+//     required this.path2,
+//   });
 
-  final String path1;
-  final String path2;
-}
+//   final String path1;
+//   final String path2;
+// }

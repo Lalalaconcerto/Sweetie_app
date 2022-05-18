@@ -1,4 +1,3 @@
-import 'package:sweetie/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import '../model/product.dart';
 import '../model/products_repository.dart';
@@ -18,6 +17,20 @@ class DetailPage extends StatefulWidget {
 
 class _DetailPageState extends State<DetailPage> {
   bool addtofavorite = false;
+
+  @override
+  void initState() {
+    super.initState();
+    addtofavorite = ProductsRepository.likeProducts.contains(widget.product);
+    print(ProductsRepository.likeProducts);
+  }
+
+  addToFavorite() {
+    if (!ProductsRepository.likeProducts.contains(widget.product)) {
+      ProductsRepository.likeProducts.add(widget.product);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,6 +62,11 @@ class _DetailPageState extends State<DetailPage> {
             tooltip: 'Add to favourite',
             onPressed: () {
               setState(() {
+                if (addtofavorite) {
+                  ProductsRepository.likeProducts.remove(widget.product);
+                } else {
+                  addToFavorite();
+                }
                 addtofavorite = !addtofavorite;
               });
             },
@@ -118,6 +136,7 @@ class _DetailPageState extends State<DetailPage> {
                     onPressed: () {
                       setState(() {
                         addtofavorite = true;
+                        addToFavorite();
                       });
                     },
                     style: ElevatedButton.styleFrom(

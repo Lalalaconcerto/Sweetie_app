@@ -46,17 +46,22 @@ class _LikePageState extends State<LikePage> {
                   child: ListView.builder(
                       padding: EdgeInsets.zero,
                       scrollDirection: Axis.vertical,
+                      itemCount: ProductsRepository.likeProducts.length,
                       itemBuilder: (context, index) {
                         // CakeNearbyModel currentCakeNearby = FoodDishes[index];
                         return InkWell(
-                          // onTap: () async {
-                          //   await Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) => DetailPage(),
-                          //     ),
-                          //   );
-                          // },
+                          onTap: () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailPage(
+                                    product:
+                                        ProductsRepository.likeProducts[index]),
+                              ),
+                            ).then((value) {
+                              setState(() {});
+                            });
+                          },
                           child: Container(
                             height: 320,
                             decoration: BoxDecoration(
@@ -81,16 +86,8 @@ class _LikePageState extends State<LikePage> {
                                     Expanded(
                                       child: Stack(
                                         children: [
-                                          Align(
-                                            alignment:
-                                                AlignmentDirectional(0, 0),
-                                            child: Image.network(
-                                              'https://s2.loli.net/2022/05/17/p1LJYnqBmk2wAx6.jpg',
-                                              width: double.infinity,
-                                              height: double.infinity,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
+                                          FavoriteImage(ProductsRepository
+                                              .likeProducts[index]),
                                           Align(
                                             alignment:
                                                 AlignmentDirectional(1, -1),
@@ -113,8 +110,9 @@ class _LikePageState extends State<LikePage> {
                                                           .favorite_rounded),
                                                   onPressed: () {
                                                     setState(() {
-                                                      removefavorite =
-                                                          !removefavorite;
+                                                      ProductsRepository
+                                                          .likeProducts
+                                                          .removeAt(index);
                                                     });
                                                   },
                                                 ),
@@ -139,7 +137,9 @@ class _LikePageState extends State<LikePage> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Favoritebottom(),
+                                                  Favoritebottom(
+                                                      ProductsRepository
+                                                          .likeProducts[index]),
                                                 ],
                                               ),
                                             ),
@@ -165,7 +165,8 @@ class _LikePageState extends State<LikePage> {
 }
 
 class Favoritebottom extends StatelessWidget {
-  const Favoritebottom({Key? key}) : super(key: key);
+  Product product;
+  Favoritebottom(this.product);
 
   @override
   Widget build(BuildContext context) {
@@ -177,7 +178,7 @@ class Favoritebottom extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    ' product.name',
+                    '${product.name}',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -201,7 +202,7 @@ class Favoritebottom extends StatelessWidget {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 0, 6, 0),
                   child: Text(
-                    ' product.rating',
+                    '${product.rating}',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.normal,
@@ -214,7 +215,7 @@ class Favoritebottom extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(1, 0, 0, 0),
                     child: Text(
-                      'product.distance',
+                      '${product.distance}',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
@@ -227,3 +228,34 @@ class Favoritebottom extends StatelessWidget {
         ]));
   }
 }
+
+class FavoriteImage extends StatelessWidget {
+  Product product;
+  FavoriteImage(this.product);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+      child: Align(
+        alignment: AlignmentDirectional(0, 0),
+        child: Image.network(
+          '${product.path}',
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+  }
+}
+    //  Align(
+    //                                         alignment:
+    //                                             AlignmentDirectional(0, 0),
+    //                                         child: Image.network(
+    //                                           '',
+    //                                           width: double.infinity,
+    //                                           height: double.infinity,
+    //                                           fit: BoxFit.cover,
+    //                                         ),
+    //                                       ),

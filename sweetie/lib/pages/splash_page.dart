@@ -3,11 +3,11 @@ import 'package:sweetie/pages/splash_page2.dart';
 
 final Color mainColor = Color.fromARGB(255, 249, 212, 239);
 
-// splash page
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Scaffold(
+        body: Stack(
       children: <Widget>[
         Container(
           width: MediaQuery.of(context).size.width,
@@ -21,10 +21,8 @@ class SplashPage extends StatelessWidget {
           alignment: Alignment(0, 0.7),
           child: GestureDetector(
             onTap: () {
-              // Use Navigator to jump page
-              Navigator.push(context, MaterialPageRoute(builder: (_) {
-                return SplashPage2();
-              }));
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => SplashPage2()));
             },
             child: Container(
                 width: 200,
@@ -77,6 +75,6 @@ class SplashPage extends StatelessWidget {
               ],
             )),
       ],
-    );
+    ));
   }
 }

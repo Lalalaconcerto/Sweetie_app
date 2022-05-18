@@ -16,29 +16,27 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 
 ## Screenshots
 
-<div align=center><img width="150" height="150" src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
+<div align=center><img width="400"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
 
 ##### Splashpage1
 
-<img src="/Users/xiaolingla/Desktop/Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.51.16.png" alt="Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.51.16" style="zoom:20%;" />
+<div align=center><img width="100"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash1.png"/></div>
 
 ##### Splashpage2
 
-<img src="/Users/xiaolingla/Desktop/Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.51.18.png" alt="Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.51.18" style="zoom:20%;" />
+<div align=center><img width="100"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash2.png"/></div>
 
 ##### Homepage
 
-<img src="/Users/xiaolingla/Desktop/Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.46.48.png" alt="Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.46.48" style="zoom:20%;" />
+<div align=center><img width="100"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/homepage.png"/></div>
 
 ##### Detailpage
 
-<img src="/Users/xiaolingla/Desktop/Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.47.15.png" alt="Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.47.15" style="zoom:20%;" />
+<div align=center><img width="100"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/detailpage.png"/></div>
 
 ##### Favotitespage
 
-<img src="/Users/xiaolingla/Desktop/Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.47.27.png" alt="Simulator Screen Shot - iPhone 12 Pro - 2022-05-18 at 10.47.27" style="zoom:20%;" />
-
-
+<div align=center><img width="100"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/favoritepage.png"/></div>
 
 
 ## Getting started

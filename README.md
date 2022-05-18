@@ -16,27 +16,27 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 
 ## Screenshots
 
-<div align=center><img width="600"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
+<div align=center><img width="1000"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
 
 ##### Splashpage1
 
-<div align=center><img width="150"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash1.png"/></div>
+<div align=center><img width="300"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash1.png"/></div>
 
 ##### Splashpage2
 
-<div align=center><img width="150"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash2.png"/></div>
+<div align=center><img width="300"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/splash2.png"/></div>
 
 ##### Homepage
 
-<div align=center><img width="150"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/homepage.png"/></div>
+<div align=center><img width="300"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/homepage.png"/></div>
 
 ##### Detailpage
 
-<div align=center><img width="150"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/detailpage.png"/></div>
+<div align=center><img width="300"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/detailpage.png"/></div>
 
 ##### Favotitespage
 
-<div align=center><img width="150"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/favoritepage.png"/></div>
+<div align=center><img width="300"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/favoritepage.png"/></div>
 
 
 ## Getting started

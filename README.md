@@ -14,6 +14,11 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 - 📝 Get the specific information of the dessert stores/restaurants, including product pictures, rating, distance, details, and business status.
 - ❤️ Support Favorites function, users can add favorite stores/restaurants to My Favorites.
 
+## Video 
+
+https://youtu.be/aRWGQoxaxfE
+
+
 ## Screenshots
 
 <div align=center><img width="800"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>

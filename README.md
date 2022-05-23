@@ -19,6 +19,10 @@ Due to the lack of time and the adaptation of google map and M1, the App does no
 https://youtu.be/aRWGQoxaxfE
 
 
+## Presentation
+
+Presentation slides: https://github.com/Lalalaconcerto/Sweetie_app/tree/main/Presentation
+
 ## Screenshots
 
 <div align=center><img width="800"  src="https://github.com/Lalalaconcerto/Sweetie_app/blob/main/images/all.jpeg"/></div>
